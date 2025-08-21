@@ -1,3 +1,8 @@
+// src/pages/Dashboard.jsx
+export default function Dashboard() {
+  return <div>Dashboard</div>
+}
+
 <div className="flex items-center justify-center gap-3">
   <button className="btn btn-outline" onClick={() => alert("Button One clicked")}>
     Button One
