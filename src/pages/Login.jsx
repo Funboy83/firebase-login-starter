@@ -19,7 +19,7 @@ export default function Login() {
     navigate('/', { replace: true });
   } catch (err) {
     const code = err?.code || "";
-    let msg = "Invalid email or password.";        // safe default
+    let msg = "Invalid email or password. Please try again";        // safe default
     if (code === "auth/too-many-requests") msg = "Too many attempts. Please wait and try again.";
     else if (code === "auth/network-request-failed") msg = "Network error. Check your connection and try again.";
     else if (code === "auth/invalid-email") msg = "Please enter a valid email address.";
